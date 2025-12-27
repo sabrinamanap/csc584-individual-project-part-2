@@ -1,0 +1,139 @@
+* {
+    font-family: "Segoe UI", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe4ec, #e9f6ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: white;
+    width: 85%;
+    max-width: 1000px;
+    padding: 50px 45px;
+    border-radius: 35px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.welcome-title {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTON GROUP (INDEX)
+========================= */
+
+.btn-group {
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   HOT PINK BUTTON
+========================= */
+
+
+
+.btn-pink {
+    display: inline-block;
+    padding: 8px 18px;   /* KECILKAN */
+    border-radius: 22px; /* kurang bulat */
+    background: #ff4d88;
+    color: white;
+    font-weight: 600;    /* sikit ringan */
+    font-size: 14px;     /* kecilkan text */
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 18px rgba(255, 77, 136, 0.3);
+}
+
+.btn-pink:hover {
+    background: #ff2f74;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(255, 77, 136, 0.4);
+}
+
+
+/* =========================
+   SECONDARY PINK BUTTON
+========================= */
+
+.btn-pink.outline {
+    background: #ffe6ee;
+    color: #ff2f74;
+    box-shadow: none;
+}
+
+.btn-pink.outline:hover {
+    background: #ffd1e0;
+    color: #ff005c;
+}
+
+/* =========================
+   TABLE & OTHERS (UNCHANGED)
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #e7f5ec;
+    color: #2f5d3a;
+    padding: 14px;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #fff1f6;
+}
+
+/* =========================
+   PERSONAL PAGE ONLY
+========================= */
+
+.personal-card {
+    background: white;
+    width: 100%;
+    max-width: 520px;
+    padding: 35px 40px;
+    border-radius: 30px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+}
+
+.personal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.personal-form button {
+    margin-top: 10px;
+    width: 100%;
+}
